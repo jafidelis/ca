@@ -1,0 +1,23 @@
+{
+  "name": "ca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "main": "tsc && node ./dist/main.js",
+    "test": "tsc && jest ./dist",
+    "express": "tsc && node ./dist/src/infra/http/express.js",
+    "hapi": "tsc && node ./dist/src/infra/http/hapi.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^20.1.2",
+    "express": "^4.17.1",
+    "pg-promise": "^10.10.1"
+  }
+}
